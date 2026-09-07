@@ -1,17 +1,10 @@
-#!/usr/bin/python3
-
-"""This file defines the Place Model
-It inherits from the BaseModel
-"""
-
+#!/usr/bin/python
+""" holds class Place"""
 from models.base_model import BaseModel
-from typing import List
 
 
 class Place(BaseModel):
-    """The Place Model"""
-
-    # Attributes
+    """Representation of Place """
     city_id = ""
     user_id = ""
     name = ""
@@ -23,3 +16,8 @@ class Place(BaseModel):
     latitude = 0.0
     longitude = 0.0
     amenity_ids = []
+
+    def __init__(self, *args, **kwargs):
+        """initializes Place"""
+        super().__init__(*args, **kwargs)
+        

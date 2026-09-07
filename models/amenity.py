@@ -1,14 +1,12 @@
-#!/usr/bin/python3
-
-"""This file defines the Amenity Model
-It inherits from the BaseModel
-"""
-
+#!/usr/bin/python
+""" holds class Amenity"""
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """The Amenity Model"""
-
-    # Attributes
+    """Representation of Amenity """
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """initializes Amenity"""
+        super().__init__(*args, **kwargs)
