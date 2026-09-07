@@ -1,16 +1,18 @@
-#!/usr/bin/python
-""" holds class User"""
+#!/usr/bin/python3
+
+"""This file defines the UserModel class
+It inherits from the BaseModel
+"""
+
+
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """Representation of a user """
+    """The User Model"""
+
+    # Attributes
     email = ""
     password = ""
     first_name = ""
     last_name = ""
-
-    def __init__(self, *args, **kwargs):
-        """initializes user"""
-        super().__init__(*args, **kwargs)
-        
